@@ -43,7 +43,7 @@ def rolling_resistance(c_r: float, mass: float, speed: Union[float, np.ndarray] 
     return rolling_force, rolling_power
 
 
-def road_load_force(speed: float, coasting_coeffs: tuple[float, float, float]) -> float:
+def road_load_force(speed: Union[float, np.ndarray], coasting_coeffs: tuple[float, float, float]) -> float:
     """
 
     :param speed: speed in [m/s]
